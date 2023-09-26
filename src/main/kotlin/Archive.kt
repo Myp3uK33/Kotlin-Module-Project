@@ -22,4 +22,15 @@ class Archive(val name: String) {
             println("Архив пуст")
         }
     }
+
+    class Note(val text: String)
+
+    fun addNote(text: String) {
+        if (text.isNotEmpty()) {
+            notes.add(text)
+            println("Заметка успешно добавлена")
+        } else {
+            println("Заметка не может быть пустой")
+        }
+    }
 }
